@@ -16,7 +16,7 @@
 <div id="shared-content1"></div>
 <script>
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'navBar.html', true);
+    xhr.open('GET', 'baseContainer/navBar.html', true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             document.getElementById('shared-content1').innerHTML = xhr.responseText;
@@ -34,7 +34,7 @@
             </a>
         </li>
         <li class="breadcrumb-item">
-            <a class="link-body-emphasis fw-semibold text-decoration-none" href="indexCatalog.html">Obchod</a>
+            <a class="link-body-emphasis fw-semibold text-decoration-none" href="Catalog/indexCatalog.html">Obchod</a>
         </li>
         <li class="breadcrumb-item">
             <a class="link-body-emphasis fw-semibold text-decoration-none" href="indexShop.html">...</a>
@@ -50,7 +50,7 @@
                 <div id="shared-content3"></div>
                 <script>
                     var xhr3 = new XMLHttpRequest();
-                    xhr3.open('GET', 'sideBar.html', true);
+                    xhr3.open('GET', 'baseContainer/sideBar.html', true);
                     xhr3.onreadystatechange = function () {
                         if (xhr3.readyState === 4 && xhr3.status === 200) {
                             document.getElementById('shared-content3').innerHTML = xhr3.responseText;
@@ -127,7 +127,7 @@
     <div id="shared-content2"></div>
     <script>
         var xhr2 = new XMLHttpRequest();
-        xhr2.open('GET', 'footer.html', true);
+        xhr2.open('GET', 'baseContainer/footer.html', true);
         xhr2.onreadystatechange = function () {
             if (xhr2.readyState === 4 && xhr2.status === 200) {
                 document.getElementById('shared-content2').innerHTML = xhr2.responseText;

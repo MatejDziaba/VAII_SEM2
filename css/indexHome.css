@@ -1,6 +1,6 @@
 .domov
 {
-    background-image: url("../img/home/uvod/Devron--bannery-radce3.jpg");
+    background-image: url("../img/home/uvod/Devron--bannery-radce3.jpg") !important;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
