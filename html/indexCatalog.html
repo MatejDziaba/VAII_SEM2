@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/breadCrumb.css">
+    <link rel="stylesheet" href="../css/mainNavBar.css">
+    <link rel="stylesheet" href="../css/indexShop.css">
+    <link rel="stylesheet" href="../css/indexCatalog.css">
+
+</head>
+<body>
+
+<div id="shared-content1"></div>
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'navBar.html', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById('shared-content1').innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+</script>
+
+<ol class="breadcrumb breadcrumb-chevron p-3 breadcrumb_style justify-content-sm-center">
+    <li class="breadcrumb-item">
+        <a class="link-body-emphasis" href="indexHome.html">
+            <svg class="bi" width="16" height="16"><i class="bi bi-house-door-fill"></i></svg>
+            <span class="visually-hidden">Domov</span>
+        </a>
+    </li>
+    <li class="breadcrumb-item">
+        <a class="link-body-emphasis fw-semibold text-decoration-none" href="indexCatalog.html">Obchod</a>
+    </li>
+</ol>
+
+<div class="container p-3 centerOnMobile">
+    <div class="row align-items-right">
+        <div class="col-sm-3 d-flex flex-column flex-shrink-0 p-3 bg-light">
+            <div id="shared-content3"></div>
+            <script>
+                var xhr3 = new XMLHttpRequest();
+                xhr3.open('GET', 'sideBar.html', true);
+                xhr3.onreadystatechange = function () {
+                    if (xhr3.readyState === 4 && xhr3.status === 200) {
+                        document.getElementById('shared-content3').innerHTML = xhr3.responseText;
+                    }
+                };
+                xhr3.send();
+            </script>
+        </div>
+
+        <div class="col-sm-9" style="padding-left: 40px;">
+
+            <h2 class="pt-2">Kategórie produktov</h2>
+            <div class="bordered-categories bordered-categories--shop row pb-4">
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexBicykle.html">
+                        <span><img src="../img/catalog/UVOD/kategoria_produktov/bicykle/horsky.jpg" alt="" loading="lazy"></span>
+                        Bicykle    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexElektroBicykle.html">
+                        <span><img src="../img/catalog/UVOD/kategoria_produktov/elektrobicykle/HorskeElektro.jpg" alt="" loading="lazy"></span>
+                        Elektrobicykle    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexKomponenty.html">
+                        <span><img src="../img/catalog/UVOD/Komponenty.jpg" alt="" loading="lazy"></span>
+                        Komponenty    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexPlasteADuse.html">
+                        <span><img src="../img/catalog/UVOD/Plaste.jpg" alt="" loading="lazy"></span>
+                        Plášte a duše    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexKolesaARafiky.html">
+                        <span><img src="../img/catalog/UVOD/KolesaRafiky.jpg" alt="" loading="lazy"></span>
+                        Kolesá a ráfiky    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexTretryAObuv.html">
+                        <span><img src="../img/catalog/UVOD/obuv.jpg" alt="" loading="lazy"></span>
+                        Tretry a obuv    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexOblecenieABatohy.html">
+                        <span><img src="../img/catalog/UVOD/Oblecenie.jpg" alt="" loading="lazy"></span>
+                        Oblečenie a batohy    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexPrislusenstvo.html">
+                        <span><img src="../img/catalog/UVOD/Prislusenstvo.jpg" alt="" loading="lazy"></span>
+                        Príslušenstvo    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexPrilby.html">
+                        <span><img src="../img/catalog/UVOD/Prilby.jpg" alt="" loading="lazy"></span>
+                        Prilby    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexCykloTrenazer.html">
+                        <span><img src="../img/catalog/UVOD/Cyklotrenazery.jpg" alt="" loading="lazy"></span>
+                        Cyklotrenažéry    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexServis.html">
+                        <span><img src="../img/catalog/UVOD/Servis.jpg" alt="" loading="lazy"></span>
+                        Servis    </a>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 py-1 py-sm-2 px-1 px-sm-2">
+                    <a href="indexVyzivaAKozmetika.html">
+                        <span><img src="../img/catalog/UVOD/kozmetika.jpg" alt="" loading="lazy"></span>
+                        Výživa a kozmetika    </a>
+
+                </div>
+            </div>
+
+            <div class="hide-when-filtered">
+
+                <div class="shop-info-boxes">
+                    <div class="shop-info-boxes-top d-flex justify-content-between align-items-end mb-2 mt-sm-5">
+                        <h2 class="mb-0 ">Prečo nakupovať u nás</h2>
+                        <a class="btn btn-outline-primary btn-mobile-full-width d-none d-sm-inline-block" href="https://www.mtbiker.sk/shop/informacie/preco-nakupovat-u-nas.html">Viac info o nákupe</a>
+                    </div>
+                    <div class="row flex-column flex-sm-row px-2 px-sm-0">
+                        <div class="col my-2">
+                            <div class="box-shop-info bg-light rounded d-flex align-items-center">
+                                <div class="py-1">
+                                    <img width="100" height="99" src="https://includes.mtbiker.sk/images/shop/img-box-objednavky.svg?v=2" alt="" loading="lazy">
+                                </div>
+                                <div class="px-3 py-4">
+                                    <h4>800&nbsp;000+ objednávok</h4>
+                                    <p>Sme najväčší cyklistický e-shop na Slovensku overený desiatkami tisíc spokojných zákazníkov.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="box-shop-info bg-light rounded d-flex align-items-center">
+                                <div class="py-1">
+                                    <img width="100" height="100" src="https://includes.mtbiker.sk/images/shop/img-box-servis.svg?v=2" alt="" loading="lazy">
+                                </div>
+                                <div class="px-3 py-4"><h4>Jedinečný zákaznícky servis</h4>
+                                    <p>Sme k dispozícii cez email, chat, telefón alebo osobne v MTBIKER centre.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="box-shop-info bg-light rounded d-flex align-items-center">
+                                <div class="py-1"><img width="100" height="100" src="https://includes.mtbiker.sk/images/shop/img-box-cyklistika.svg?v=2" alt="" loading="lazy"></div>
+                                <div class="px-3 py-4"><h4>Aktívne podporujeme cyklistiku na Slovensku</h4><p>Aj vďaka Tvojej objednávke podporujeme rozvoj cyklistiky.</p></div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="box-shop-info bg-light rounded d-flex align-items-center">
+                                <div class="py-1 pr-3"><img width="85" height="101" src="https://includes.mtbiker.sk/images/shop/img-box-bezpecny-nakup.svg?v=3" alt="" loading="lazy"></div>
+                                <div class="px-3 py-4"><h4>Bezpečný nákup a metódy platby</h4><p>Proces platby je bezpečný a ponúkame Ti široké možnosti.</p></div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="box-shop-info bg-light rounded d-flex align-items-center">
+                                <div class="py-1"><img width="100" height="100" src="https://includes.mtbiker.sk/images/shop/img-box-vernostny-system.svg?v=2" alt="" loading="lazy"></div>
+                                <div class="px-3 py-4"><h4>Vernostný systém</h4><p>Odmeníme Ťa za nákup a takisto za kvalitné príspevky v MTBIKER fóre, e-shope, výjazdoch a fotogalérii.</p></div>
+                            </div>
+                        </div>
+                        <div class="col my-2">
+                            <div class="box-shop-info bg-light rounded d-flex align-items-center">
+                                <div class="py-1"><img width="100" height="100" src="https://includes.mtbiker.sk/images/shop/img-box-centrum.svg?v=2" alt="" loading="lazy"></div>
+                                <div class="px-3 py-4"><h4>MTBIKER centrum a showroom</h4><p>Navštív nás v predajni s pump-trackom pri trailoch alebo v historickej budove v centre Bratislavy.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-outline-primary btn-mobile-full-width mt-2 d-sm-none" href="https://www.mtbiker.sk/shop/informacie/preco-nakupovat-u-nas.html">Viac info o nákupe</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/home/14.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1><strong>Perfektná torzná pevnosť</strong></h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/home/5.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1><strong>Žiadne šmejdy</strong></h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/home/17.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1><strong>Prekonavaj prekážky s nami</strong></h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+
+<div id="shared-content2"></div>
+<script>
+    var xhr2 = new XMLHttpRequest();
+    xhr2.open('GET', 'footer.html', true);
+    xhr2.onreadystatechange = function () {
+        if (xhr2.readyState === 4 && xhr2.status === 200) {
+            document.getElementById('shared-content2').innerHTML = xhr2.responseText;
+        }
+    };
+    xhr2.send();
+</script>
+</body>
+</html>
