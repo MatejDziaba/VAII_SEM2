@@ -48,6 +48,7 @@ body {
     text-align: center;
     font-size: 18px;
     color: #141518;
+    display: table;
 }
 
 .bordered-categories a span img {
@@ -174,9 +175,16 @@ a {
     margin-left: -12px;
     margin-right: 2px;
 }
-img {
+.imgProduct {
     vertical-align: middle;
-    border-style: none;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+}
+
+.imgProduct:hover
+{
+    border: 3px solid #50adff !important;
+    border-radius: 20px !important;
 }
 
 pb-4, .py-4 {
@@ -200,6 +208,18 @@ pb-4, .py-4 {
     font-size: 12px;
     margin: 0;
 }
+.styleButtonProduct:hover
+{
+    background-color: #ee9c4a !important;
+    border-color: #ee9c4a !important;
+}
+
+.d-none.d-sm-inline.shopListDropDown
+{
+    color: #ee9c4a;
+    font-weight: 600;
+}
+
 
 
 

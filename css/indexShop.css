@@ -99,19 +99,20 @@
 }
 
 .container .product-item .title {
-    font-size: 0.95rem;
-    letter-spacing: 0.5px
+    font-size: 1.25rem;
+    letter-spacing: 2.5px
 }
 
 .container .product-item .fa-star {
-    font-size: 0.65rem;
+    font-size: 0.85rem;
     color: #ff0000;
 }
 
 .container .product-item .price {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .fw-800 {
@@ -129,6 +130,14 @@
 }
 
 .bg-red {
-    background-color: #bb3535;
-    color: #fff
+    background-color: #f2820b;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.styleButtonProduct
+{
+    text-align: center;
+    width: 8rem;
+    border-radius: 200px !important;
 }

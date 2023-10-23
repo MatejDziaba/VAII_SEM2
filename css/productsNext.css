@@ -1,0 +1,41 @@
+.btn.btn-primary.btn-mobile-full-width.mb-2.mb-sm-0.paginationButton
+{
+    background-color: white;
+    color: #f2820b;
+    border-color: #f2820b;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.btn.btn-primary.btn-mobile-full-width.mb-2.mb-sm-0.paginationButton:hover
+{
+    background-color: #f2820b;
+    border-color: #f2820b;
+    color: white;
+}
+
+.pagination a, .pagination span {
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 3px 9px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.pagination a
+{
+    color: #f2820b;
+}
+
+.pagination a:hover
+{
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: #f2820b;
+}
+
+.polozka
+{
+    color: #babdc2;
+}
